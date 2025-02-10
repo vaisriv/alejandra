@@ -14,9 +14,9 @@ pub struct Config {
 pub enum Indentation {
     /// Four spaces
     FourSpaces,
+    #[default]
     /// Tabs
     Tabs,
-    #[default]
     /// Two spaces
     TwoSpaces,
 }
