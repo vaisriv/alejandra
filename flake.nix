@@ -132,9 +132,9 @@
 
         pkgsCross.aarch64-multiplatform.pkgsStatic.alejandra
         # Temporarily disabled to speed up release
-        pkgsCross.armv7l-hf-multiplatform.pkgsStatic.alejandra
-        pkgsCross.gnu32.pkgsStatic.alejandra
-        pkgsCross.raspberryPi.pkgsStatic.alejandra
+        # pkgsCross.armv7l-hf-multiplatform.pkgsStatic.alejandra
+        # pkgsCross.gnu32.pkgsStatic.alejandra
+        # pkgsCross.raspberryPi.pkgsStatic.alejandra
       ])
       // {
         "alejandra-vscode-vsix" = mkYarnPackage {
