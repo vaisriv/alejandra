@@ -48,7 +48,11 @@ struct CLIArgs {
 
     /// Number of formatting threads to spawn. Defaults to the number of
     /// physical CPUs.
-    #[clap(long, short, value_parser = value_parser!(u8).range(1..))]
+    #[clap(
+        long, short,
+        env = "ALEJANDRA_THREADS",
+        value_parser = value_parser!(u8).range(1..),
+    )]
     threads: Option<u8>,
 
     /// Use once to hide informational messages,
